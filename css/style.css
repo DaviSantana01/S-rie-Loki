@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&family=Poppins:wght@200;800&display=swap');
+
+.largura{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+:root{
+    ---font: 'B612';
+}
+
+.pagina{
+    background-color: black;
+    background-image: url(../img/background.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.pagina div:nth-child(1){
+    color: #fff;
+    text-align: center;
+    padding-top: 3%;
+    font-family: var(---font);
+}
+
+.pagina div h2{
+    font-size: 1.5rem;
+}
+
+.pagina div h1{
+    margin-top: 4%;
+    font-size: 8rem;
+    font-weight: 900;
+}
+
+@media(max-width:700px){
+    .pagina{
+        background-position: bottom;
+    }
+    .pagina div h2{
+        font-size: 1rem;
+        margin-top: 10%;
+    }
+    .pagina div h1{
+        margin-top: 15%;
+        font-size: 4rem;
+    }
+}
+
+/*Conteudo*/
+
+.conteudo{
+    display: flex;
+    margin-top: 8%;
+    justify-content: space-around;
+}
+
+
+.conteudo article:nth-child(1){
+    width: 20%;
+}
+.conteudo article:nth-child(2){
+    width: 70%;
+}
+
+.conteudo div:nth-child(1){
+    margin-top: 0 !important;
+}
+
+.conteudo div{
+    text-align: start !important;
+    padding-top: 0 !important;
+    line-height: 28px;
+    margin-top: 7%;
+}
+
+.conteudo div p{
+    font-size: 1.2rem;
+}
+
+.conteudo div span{
+    color:#fff;
+    font-family: var(---font);
+}
+
+.conteudo div span{
+    margin-right: 5%;
+    font-size: 1.6rem;
+}
+
+.conteudo span img{
+    width: 5%;
+}
+
+.conteudo div a{
+    padding: 1.8% 3% 1.8% 3%;
+    font-family: var(---font);
+    text-transform: uppercase;
+    background-color: rgba(0, 114, 210, 1);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 2%;
+    transition: ease-in-out 1s;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.conteudo div a:nth-child(1):hover{
+    background-color: rgb(36, 132, 211);
+    transition: ease-in-out 1s;
+    color: #000;
+}
+
+.conteudo div a:nth-child(2){
+    background-color: rgba(19, 19, 24, 1);
+    border: solid 1px #fff;
+}
+.conteudo div a:nth-child(2):hover{
+    background-color: rgb(238, 238, 238);
+    border: solid 1px #000;
+    color: #000;
+}
+
+.conteudo02{
+    display: none;
+}
+
+@media(max-width:700px){
+    .conteudo{
+        display: none;
+    }
+    .conteudo02{
+        display: block;
+    }
+    .conteudo article div:nth-child(2){
+        display: block;
+    }
+    .conteudo02{
+        font-family: var(---font);
+        color: #fff;
+        margin-top: 70%;
+        text-align: center;
+    }
+    .conteudo02 span{
+        margin-right: 5%;
+    }
+    .conteudo02 span img{
+        width: 5%;
+    }
+}
